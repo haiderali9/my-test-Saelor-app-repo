@@ -26,6 +26,6 @@ jobs:
 
     - name: Deploy to EC2
       run: |
-        ssh ubuntu@44.217.238.13 'cd /home/ubuntu/my-test-Saelor-app-repo && git pull origin main'
+        ssh ubuntu@44.217.238.13 'cd /home/ubuntu/my-test-Saelor-app-repo && git pull origin main && docker build -t my-app-image .'
 
 
