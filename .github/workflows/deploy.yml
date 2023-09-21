@@ -27,15 +27,15 @@ jobs:
     - name: Stop and Remove Containers
       run: |
         # SSH into your EC2 server and stop/remove containers using docker-compose (if applicable)
-        ssh ubuntu@ip-172-31-92-48 'cd /home/ubuntu/my-test-Saelor-app-repo && docker-compose down -v'
+        ssh ubuntu@44.217.238.13 'cd /home/ubuntu/my-test-Saelor-app-repo && docker-compose down -v'
 
     - name: Remove Old Docker Images
       run: |
         # SSH into your EC2 server and remove old Docker images
-        ssh ubuntu@ip-172-31-92-48 'docker images -q | xargs -r docker rmi -f'
+        ssh ubuntu@44.217.238.13 'docker images -q | xargs -r docker rmi -f'
 
     - name: Build and Tag Docker Image
       run: |
         # SSH into your EC2 server and build the new Docker image
-        ssh ubuntu@ip-172-31-92-48 'cd /home/ubuntu/my-test-Saelor-app-repo && docker build -t my-app-image .'
+        ssh ubuntu@44.217.238.13 'cd /home/ubuntu/my-test-Saelor-app-repo && docker build -t my-app-image .'
 
