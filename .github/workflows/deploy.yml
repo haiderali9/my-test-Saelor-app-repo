@@ -37,5 +37,5 @@ jobs:
     - name: Build and Tag Docker Image
       run: |
         # SSH into your EC2 server and build the new Docker image
-        ssh ubuntu@44.217.238.13 'cd /home/ubuntu/my-test-Saelor-app-repo && docker build -t my-app-image .'
+        ssh ubuntu@44.217.238.13 'cd /home/ubuntu/my-test-Saelor-app-repo && docker build -t my-app-images .'
 
