@@ -1,0 +1,6 @@
+projectKey=Flask
+serverUrl=http://3.137.167.83:9000
+serverVersion=7.9.1.27448
+dashboardUrl=http://3.137.167.83:9000/dashboard?id=Flask
+ceTaskId=AXl_hEGT2G62WnHnATsP
+ceTaskUrl=http://3.137.167.83:9000/api/ce/task?id=AXl_hEGT2G62WnHnATsP
